@@ -104,6 +104,7 @@ double calcularres(vector<string>a){
         }
         return calcularres(neo);
     }
+    // Falta un return
 }
 
 int main() {
@@ -197,6 +198,11 @@ int main() {
         }
     }
     double resultado;
+    // No está dando los resultados correctos en algunos casos:
+    // Probar con ((7*3)/4+6*(A^2)/B)*(5)
+    // A: 123 B: 11
+    // Resultado esperado: 41287.2 Actual: 41266.2
+    // o 7/4*((A+B)*A)+3 con A: 11 B: 12
     resultado = calcularres(final);
     cout << endl <<  resultado;
 
